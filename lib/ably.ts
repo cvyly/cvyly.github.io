@@ -25,7 +25,7 @@ export function subscribeToMapEntities(
   onUpdate: (entities: Entity[]) => void
 ) {
   const ably = getAbly()
-  if (!ably) return () => {}
+  if (!ably) return () => { }
 
   const channel = ably.channels.get("aux")
 
@@ -33,7 +33,7 @@ export function subscribeToMapEntities(
     try {
       const snapshot = typeof message.data === "string" ? JSON.parse(message.data) : message.data
       const targetMap = mapId.toLowerCase()
-      
+
       if (snapshot.map && snapshot.map.toLowerCase() !== targetMap) {
         return
       }

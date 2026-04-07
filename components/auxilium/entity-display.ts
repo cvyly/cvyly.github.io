@@ -16,7 +16,7 @@ const primerPalette: Record<EntityCategory, EntityDisplayTokens> = {
     lightHex: "#1f883d",
     darkHex: "#3fb950",
   },
-  target: {
+  enemy: {
     dotClassName: "bg-[#cf222e] dark:bg-[#f85149]",
     textClassName: "text-[#cf222e] dark:text-[#f85149]",
     lightHex: "#cf222e",
@@ -41,8 +41,8 @@ export function getCategoryLabel(category: EntityCategory) {
     return "Friend"
   }
 
-  if (category === "target") {
-    return "Target"
+  if (category === "enemy") {
+    return "Enemy"
   }
 
   if (category === "worker") {
@@ -60,7 +60,7 @@ export function deriveAuxCategory(tags?: string[]): EntityCategory {
   if (!tags || tags.length === 0) return "default"
   
   if (tags.includes("friend")) return "friend"
-  if (tags.includes("target")) return "target"
+  if (tags.includes("enemy")) return "enemy"
   if (tags.includes("worker")) return "worker"
   
   return "default"

@@ -7,7 +7,7 @@ import { getCategoryTokens } from "@/components/auxilium/entity-display"
 
 const legendItems = [
   { color: getCategoryTokens("friend").dotClassName, label: "Friends" },
-  { color: getCategoryTokens("target").dotClassName, label: "Targets" },
+  { color: getCategoryTokens("enemy").dotClassName, label: "Enemies" },
   { color: getCategoryTokens("worker").dotClassName, label: "Workers" },
   { color: getCategoryTokens("default").dotClassName, label: "Defaults" },
 ]

@@ -1,6 +1,6 @@
 "use client"
 
-export type EntityCategory = "friend" | "target" | "default" | "worker"
+export type EntityCategory = "friend" | "enemy" | "default" | "worker"
 
 export interface Entity {
   id: string
