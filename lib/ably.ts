@@ -31,19 +31,17 @@ export function subscribeToMapEntities(
 
   const handleMessage = (message: Ably.Message) => {
     try {
-      const snapshot = typeof message.data === "string" ? JSON.parse(message.data) : message.data
+      const data = typeof message.data === "string" ? JSON.parse(message.data) : message.data
+      const snapshots = Array.isArray(data) ? data : [data]
       const targetMap = mapId.toLowerCase()
 
-      if (snapshot.map && snapshot.map.toLowerCase() !== targetMap) {
+      const snapshot = snapshots.find((s: any) => s.map && s.map.toLowerCase() === targetMap)
+      
+      if (!snapshot) {
         return
       }
 
-      let validEntities = snapshot.entities || []
-      validEntities = validEntities.filter((e: any) => {
-        return !e.server || e.server.toLowerCase() === targetMap
-      })
-
-      onUpdate(mapAuxSnapshotToEntities({ entities: validEntities }))
+      onUpdate(mapAuxSnapshotToEntities({ entities: snapshot.entities || [] }))
     } catch (err) {
       console.error("Failed to parse realtime map snapshot:", err)
     }
