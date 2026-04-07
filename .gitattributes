@@ -1,0 +1,2 @@
+*.obj filter=lfs diff=lfs merge=lfs -text
+public/maps/**/*.obj filter=lfs diff=lfs merge=lfs -text

@@ -1,0 +1,22 @@
+{
+  "id": "deeps",
+  "name": "Deeps",
+  "source": "single-obj-export",
+  "bounds": {
+    "minX": 18879,
+    "maxX": 19136,
+    "minY": 0,
+    "maxY": 256,
+    "minZ": -241,
+    "maxZ": 304
+  },
+  "assets": {
+    "format": "obj",
+    "terrain": [
+      {
+        "file": "terrain.obj",
+        "order": 1
+      }
+    ]
+  }
+}

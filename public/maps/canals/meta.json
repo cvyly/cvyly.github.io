@@ -1,0 +1,22 @@
+{
+  "id": "canals",
+  "name": "Canals",
+  "source": "single-obj-export",
+  "bounds": {
+    "minX": 8864,
+    "maxX": 9132,
+    "minY": 0,
+    "maxY": 256,
+    "minZ": -108,
+    "maxZ": 154
+  },
+  "assets": {
+    "format": "obj",
+    "terrain": [
+      {
+        "file": "terrain.obj",
+        "order": 1
+      }
+    ]
+  }
+}

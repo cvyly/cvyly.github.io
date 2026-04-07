@@ -1,0 +1,22 @@
+{
+  "id": "overworld",
+  "name": "Overworld",
+  "source": "single-obj-export",
+  "bounds": {
+    "minX": 19807,
+    "maxX": 20176,
+    "minY": 0,
+    "maxY": 256,
+    "minZ": -177,
+    "maxZ": 208
+  },
+  "assets": {
+    "format": "obj",
+    "terrain": [
+      {
+        "file": "terrain.obj",
+        "order": 1
+      }
+    ]
+  }
+}

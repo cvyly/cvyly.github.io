@@ -1,0 +1,22 @@
+{
+  "id": "halls",
+  "name": "Halls",
+  "source": "single-obj-export",
+  "bounds": {
+    "minX": 16782,
+    "maxX": 17171,
+    "minY": 0,
+    "maxY": 256,
+    "minZ": -146,
+    "maxZ": 279
+  },
+  "assets": {
+    "format": "obj",
+    "terrain": [
+      {
+        "file": "terrain.obj",
+        "order": 1
+      }
+    ]
+  }
+}

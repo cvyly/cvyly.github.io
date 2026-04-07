@@ -1,0 +1,22 @@
+{
+  "id": "savannah",
+  "name": "Savannah",
+  "source": "single-obj-export",
+  "bounds": {
+    "minX": 853,
+    "maxX": 1107,
+    "minY": 0,
+    "maxY": 256,
+    "minZ": -101,
+    "maxZ": 111
+  },
+  "assets": {
+    "format": "obj",
+    "terrain": [
+      {
+        "file": "terrain.obj",
+        "order": 1
+      }
+    ]
+  }
+}

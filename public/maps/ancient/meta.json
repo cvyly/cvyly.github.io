@@ -1,0 +1,22 @@
+{
+  "id": "ancient",
+  "name": "Ancient",
+  "source": "single-obj-export",
+  "bounds": {
+    "minX": -177,
+    "maxX": 108,
+    "minY": 0,
+    "maxY": 256,
+    "minZ": -145,
+    "maxZ": 99
+  },
+  "assets": {
+    "format": "obj",
+    "terrain": [
+      {
+        "file": "terrain.obj",
+        "order": 1
+      }
+    ]
+  }
+}

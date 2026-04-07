@@ -1,0 +1,22 @@
+{
+  "id": "kingdom",
+  "name": "Kingdom",
+  "source": "single-obj-export",
+  "bounds": {
+    "minX": 3862,
+    "maxX": 4140,
+    "minY": 0,
+    "maxY": 256,
+    "minZ": -129,
+    "maxZ": 157
+  },
+  "assets": {
+    "format": "obj",
+    "terrain": [
+      {
+        "file": "terrain.obj",
+        "order": 1
+      }
+    ]
+  }
+}

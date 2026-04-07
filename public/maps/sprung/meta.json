@@ -1,0 +1,22 @@
+{
+  "id": "sprung",
+  "name": "Sprung",
+  "source": "single-obj-export",
+  "bounds": {
+    "minX": 15889,
+    "maxX": 16128,
+    "minY": 0,
+    "maxY": 256,
+    "minZ": -97,
+    "maxZ": 149
+  },
+  "assets": {
+    "format": "obj",
+    "terrain": [
+      {
+        "file": "terrain.obj",
+        "order": 1
+      }
+    ]
+  }
+}

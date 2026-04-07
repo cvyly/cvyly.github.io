@@ -1,0 +1,22 @@
+{
+  "id": "mayan",
+  "name": "Mayan",
+  "source": "single-obj-export",
+  "bounds": {
+    "minX": 9886,
+    "maxX": 10172,
+    "minY": 0,
+    "maxY": 256,
+    "minZ": -123,
+    "maxZ": 173
+  },
+  "assets": {
+    "format": "obj",
+    "terrain": [
+      {
+        "file": "terrain.obj",
+        "order": 1
+      }
+    ]
+  }
+}
